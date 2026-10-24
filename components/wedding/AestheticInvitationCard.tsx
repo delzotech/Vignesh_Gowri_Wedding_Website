@@ -87,21 +87,27 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
               </span>
             </div>
 
-            {/* Central Ornate Gold Wax Seal */}
+            {/* Central Ornate Floral Gold & Rose Wax Seal */}
             <div className="my-auto py-4 relative z-10">
-              <div className="relative w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-full bg-gradient-to-br from-gold-400 via-gold-500 to-gold-700 shadow-2xl p-1.5 flex items-center justify-center border-4 border-gold-200 transform hover:scale-105 transition-transform duration-300 cursor-pointer"
-                   onClick={handleOpenInvitation}>
-                {/* Wax Seal Outer Rim Texture */}
-                <div className="w-full h-full rounded-full border-2 border-dashed border-gold-200/80 flex flex-col items-center justify-center text-white text-center p-2">
-                  <span className="text-[10px] tracking-widest uppercase font-serif font-bold text-gold-100">
-                    MANGALAM
-                  </span>
-                  <span className="font-script text-3xl sm:text-4xl my-0.5 leading-none text-gold-50 drop-shadow">
-                    V&G
-                  </span>
-                  <span className="text-[9px] font-mono tracking-wider text-gold-200">
-                    10 & 11 NOV
-                  </span>
+              <div
+                className="relative w-32 h-32 sm:w-36 sm:h-36 mx-auto rounded-full bg-gradient-to-br from-gold-300 via-gold-500 to-amber-700 shadow-2xl p-1.5 flex items-center justify-center border-4 border-gold-200 transform hover:scale-105 transition-transform duration-300 cursor-pointer group"
+                onClick={handleOpenInvitation}
+                title={isTamil ? "அழைப்பிதழைத் திறக்க கிளிக் செய்யவும்" : "Click to break seal & open invitation"}
+              >
+                <div className="relative w-full h-full rounded-full overflow-hidden shadow-inner border border-gold-200/90">
+                  <Image
+                    src="/images/branding/floral-vg-monogram.jpg"
+                    alt="Vignesh & Gowri Floral Monogram Crest"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="144px"
+                    priority
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end items-center pb-2">
+                    <span className="text-[9px] font-mono font-bold tracking-widest text-gold-200 uppercase drop-shadow">
+                      10 &amp; 11 NOV
+                    </span>
+                  </div>
                 </div>
               </div>
 
@@ -330,8 +336,35 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
                 </a>
               </div>
 
+              {/* Bottom Traditional Tamil Wedding Calligraphy Artwork (Inspired by Reference Style: "விக்னேஷ் கௌரி") */}
+              <div className="mt-8 pt-6 border-t border-gold-200/70 flex flex-col items-center justify-center">
+                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-emerald-800 bg-emerald-50/90 border border-emerald-300 px-3.5 py-1 rounded-full mb-3 shadow-xs inline-flex items-center gap-1.5">
+                  <Sparkles className="w-3 h-3 text-emerald-600" />
+                  <span>{isTamil ? "பாரம்பரிய தமிழ் கையெழுத்துக் கலை" : "Traditional Tamil Wedding Calligraphy"}</span>
+                </span>
+                
+                <div className="relative w-56 sm:w-64 aspect-square rounded-3xl overflow-hidden shadow-xl border-2 border-emerald-600/30 hover:scale-[1.02] transition-transform duration-300 bg-[#FAF7F2] p-1.5 bg-gradient-to-br from-emerald-100/50 via-amber-50 to-gold-100/40">
+                  <div className="relative w-full h-full rounded-2xl overflow-hidden">
+                    <Image
+                      src="/images/branding/tamil-calligraphy-vignesh-gowri.jpg"
+                      alt="விக்னேஷ் கௌரி — Tamil Wedding Calligraphy Artwork"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 640px) 224px, 256px"
+                    />
+                  </div>
+                </div>
+
+                <p className="font-tamil text-base text-emerald-950 font-bold mt-3 tracking-wide drop-shadow-xs">
+                  விக்னேஷ் &amp; கௌரி
+                </p>
+                <p className="font-serif text-xs text-charcoal-600 italic">
+                  Vignesh &amp; Gowri • Two Hearts, One Blessed Journey
+                </p>
+              </div>
+
               {/* Bottom Blooming Lotus Floral Border */}
-              <div className="relative w-full h-12 sm:h-14 mt-4 pointer-events-none select-none opacity-85">
+              <div className="relative w-full h-12 sm:h-14 mt-6 pointer-events-none select-none opacity-85">
                 <DecorBottomLotusBorder className="h-full" />
               </div>
             </div>

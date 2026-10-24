@@ -1,17 +1,20 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 interface WeddingMonogramProps {
   className?: string;
   size?: "xs" | "sm" | "md" | "lg" | "xl";
   withAura?: boolean;
+  variant?: "floral" | "vector";
 }
 
 export function WeddingMonogram({
   className = "",
   size = "md",
   withAura = false,
+  variant = "floral",
 }: WeddingMonogramProps) {
   const sizeMap = {
     xs: "w-8 h-8",
@@ -20,6 +23,32 @@ export function WeddingMonogram({
     lg: "w-20 h-20 sm:w-24 sm:h-24",
     xl: "w-28 h-28 sm:w-36 sm:h-36",
   }[size];
+
+  if (variant === "floral") {
+    return (
+      <div className={`relative inline-flex items-center justify-center select-none ${className}`}>
+        {withAura && (
+          <div className="absolute inset-0 bg-gradient-to-tr from-amber-400/40 via-red-400/25 to-gold-200/35 rounded-full blur-md -z-10" />
+        )}
+        <div
+          className={`relative ${sizeMap} rounded-full p-[1.5px] bg-gradient-to-br from-amber-300 via-gold-400 to-amber-700 shadow-md transition-transform duration-300 hover:scale-105 flex items-center justify-center overflow-hidden border border-gold-200/90`}
+          title="Vignesh & Gowri — Royal Floral Monogram Crest"
+          aria-label="Vignesh & Gowri Wedding Monogram Crest"
+        >
+          <div className="relative w-full h-full rounded-full overflow-hidden bg-maroon-900">
+            <Image
+              src="/images/branding/floral-vg-monogram.jpg"
+              alt="Vignesh & Gowri Floral Monogram Crest"
+              fill
+              className="object-cover scale-105"
+              sizes="(max-width: 640px) 80px, 144px"
+              priority
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={`relative inline-flex items-center justify-center select-none ${className}`}>
@@ -51,15 +80,11 @@ export function WeddingMonogram({
           <circle cx="50" cy="50" r="46" stroke="url(#goldBorderMonogram)" strokeWidth="1.5" strokeDasharray="3 2" />
           <circle cx="50" cy="50" r="42" stroke="url(#goldGradientMonogram)" strokeWidth="1" opacity="0.6" />
 
-          {/* Tiny Lotus Buds at Cardinal Points */}
+          {/* Auspicious Botanical Accents */}
           <circle cx="50" cy="5" r="2.2" fill="url(#goldGradientMonogram)" />
           <circle cx="50" cy="95" r="2.2" fill="url(#goldGradientMonogram)" />
           <circle cx="5" cy="50" r="2.2" fill="url(#goldGradientMonogram)" />
           <circle cx="95" cy="50" r="2.2" fill="url(#goldGradientMonogram)" />
-
-          {/* Auspicious Botanical Leaf Accents */}
-          <path d="M48 9 C50 6 52 9 50 12 C48 9 50 6 48 9 Z" fill="url(#goldGradientMonogram)" />
-          <path d="M48 91 C50 88 52 91 50 94 C48 91 50 88 48 91 Z" fill="url(#goldGradientMonogram)" />
 
           {/* Royal Interlocking VG Monogram Letters */}
           <text
@@ -86,8 +111,6 @@ export function WeddingMonogram({
           >
             G
           </text>
-
-          {/* Elegant Floral Ampersand / Sacred Knot Center */}
           <text
             x="50"
             y="65"
@@ -104,4 +127,3 @@ export function WeddingMonogram({
     </div>
   );
 }
-
