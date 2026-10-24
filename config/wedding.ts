@@ -162,8 +162,8 @@ export const weddingConfig: WeddingConfig = {
       dayOfWeek: "Tuesday",
       isoDate: "2026-11-10T18:00:00+05:30",
       timestampIST: new Date("2026-11-10T18:00:00+05:30").getTime(),
-      timeRange: "6:00 PM onwards",
-      tamilTime: "மாலை 6:00 மணி முதல்",
+      timeRange: "6:00 PM to 9:00 PM",
+      tamilTime: "மாலை 6:00 மணி முதல் 9:00 மணி வரை",
       venueName: "Namperumal Thirumana Mandapam",
       tamilVenueName: "நம்பெருமாள் திருமண மண்டபம்",
       locationArea: "Vaiyappamalai",
@@ -176,7 +176,7 @@ export const weddingConfig: WeddingConfig = {
         description: "Join us to celebrate the wedding reception of Vignesh and Gowri.",
         location: "Namperumal Thirumana Mandapam, Vaiyappamalai, Tamil Nadu",
         startTime: "2026-11-10T12:30:00Z", // 6:00 PM IST = 12:30 PM UTC
-        endTime: "2026-11-10T16:30:00Z", // 10:00 PM IST = 4:30 PM UTC
+        endTime: "2026-11-10T15:30:00Z", // 9:00 PM IST = 3:30 PM UTC
       },
     },
     marriage: {
