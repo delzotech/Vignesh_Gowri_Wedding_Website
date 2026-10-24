@@ -44,29 +44,36 @@ export function FinalWelcomeSection({ isTamil = false }: FinalWelcomeSectionProp
         <DecorHangingGarland side="both" size="lg" />
 
         {/* Foreground Content */}
-        <div className="relative z-10 w-full min-h-[580px] sm:min-h-[660px] flex flex-col justify-end p-6 sm:p-12 text-center items-center">
+        <div className="relative z-10 w-full min-h-[680px] sm:min-h-[760px] flex flex-col justify-center p-6 sm:p-12 text-center items-center pt-12 sm:pt-16">
           {/* Sacred Ganesha Motif */}
           <div className="mb-2">
             <DecorGaneshaMotif size="sm" withAura={true} />
           </div>
 
           {/* Auspicious Tamil Welcome Proclamation */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/20 border border-amber-400/50 backdrop-blur-md text-amber-300 text-xs font-bold uppercase tracking-[0.2em] mb-3 shadow-md">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/20 border border-amber-400/50 backdrop-blur-md text-amber-300 text-xs font-bold uppercase tracking-[0.2em] mb-2 shadow-md">
             <Sparkles className="w-3.5 h-3.5 text-amber-300" />
             <span>{isTamil ? "நல்வரவு • எங்கள் திருமண அழைப்பு" : "நல்வரவு! • We Warmly Welcome You"}</span>
           </div>
 
-          {/* Royal Tamil & English Couple Artwork Badge */}
+          {/* Authentic Tamil Wedding Calligraphy Artwork Badge (Image 2 style) */}
           <div className="relative my-4 flex flex-col items-center">
-            <div className="relative w-64 sm:w-80 px-6 py-5 rounded-2xl shadow-2xl border-2 border-amber-300/80 bg-gradient-to-b from-[#2B1708]/90 via-[#3B200C]/90 to-[#2B1708]/90 backdrop-blur-md transition-transform duration-300 hover:scale-[1.02] flex flex-col items-center justify-center text-center">
-              <WeddingMonogram size="sm" withAura={true} />
-              <h3 className="font-tamil text-2xl sm:text-3xl text-amber-300 font-bold tracking-wide mt-2 drop-shadow-sm">
-                விக்னேஷ் &amp; கௌரி
-              </h3>
-              <p className="font-amora text-lg sm:text-xl text-amber-100 tracking-wide font-medium mt-1">
-                Vignesh &amp; Gowri
-              </p>
+            <div className="relative w-52 sm:w-60 aspect-square rounded-3xl overflow-hidden shadow-2xl border-2 border-amber-300/90 p-1 bg-gradient-to-br from-amber-400/60 via-yellow-200/40 to-amber-600/60 backdrop-blur-md transition-transform duration-300 hover:scale-[1.03]">
+              <div className="relative w-full h-full rounded-2xl overflow-hidden bg-[#FAF7F2] shadow-inner">
+                <Image
+                  src="/images/branding/tamil-calligraphy-vignesh-gowri.jpg"
+                  alt="விக்னேஷ் கௌரி — Traditional Tamil Wedding Calligraphy"
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 640px) 208px, 240px"
+                  priority
+                />
+              </div>
             </div>
+            
+            <p className="font-amora text-xl sm:text-2xl text-amber-200 tracking-wide font-medium mt-2.5 drop-shadow-md">
+              Vignesh &amp; Gowri
+            </p>
           </div>
 
           <p className="font-serif text-sm sm:text-lg text-stone-200 max-w-xl mx-auto leading-relaxed italic mb-6">

@@ -351,33 +351,6 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
                 </a>
               </div>
 
-              {/* Bottom Traditional Tamil Wedding Calligraphy Artwork (Inspired by Reference Style: "விக்னேஷ் கௌரி") */}
-              <div className="mt-8 pt-6 border-t border-gold-200/70 flex flex-col items-center justify-center">
-                <span className="text-[10px] uppercase font-bold tracking-[0.2em] text-emerald-800 bg-emerald-50/90 border border-emerald-300 px-3.5 py-1 rounded-full mb-3 shadow-xs inline-flex items-center gap-1.5">
-                  <Sparkles className="w-3 h-3 text-emerald-600" />
-                  <span>{isTamil ? "பாரம்பரிய தமிழ் கையெழுத்துக் கலை" : "Traditional Tamil Wedding Calligraphy"}</span>
-                </span>
-                
-                <div className="relative w-56 sm:w-64 aspect-square rounded-3xl overflow-hidden shadow-xl border-2 border-emerald-600/30 hover:scale-[1.02] transition-transform duration-300 bg-[#FAF7F2] p-1.5 bg-gradient-to-br from-emerald-100/50 via-amber-50 to-gold-100/40">
-                  <div className="relative w-full h-full rounded-2xl overflow-hidden">
-                    <Image
-                      src="/images/branding/tamil-calligraphy-vignesh-gowri.jpg"
-                      alt="விக்னேஷ் கௌரி — Tamil Wedding Calligraphy Artwork"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 640px) 224px, 256px"
-                    />
-                  </div>
-                </div>
-
-                <p className="font-tamil text-base text-emerald-950 font-bold mt-3 tracking-wide drop-shadow-xs">
-                  விக்னேஷ் &amp; கௌரி
-                </p>
-                <p className="font-serif text-xs text-charcoal-600 italic">
-                  Vignesh &amp; Gowri • Two Hearts, One Blessed Journey
-                </p>
-              </div>
-
               {/* Bottom Blooming Lotus Floral Border */}
               <div className="relative w-full h-12 sm:h-14 mt-6 pointer-events-none select-none opacity-85">
                 <DecorBottomLotusBorder className="h-full" />
