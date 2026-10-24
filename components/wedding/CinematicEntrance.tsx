@@ -194,7 +194,7 @@ export function CinematicEntrance({
             className="px-8 sm:px-10 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white font-serif font-bold text-xs sm:text-sm tracking-wider uppercase shadow-2xl border-2 border-amber-300/80 transform active:scale-95 transition-all inline-flex items-center justify-center gap-2 group animate-pulse"
             aria-label="Enter wedding celebration"
           >
-            <span>ENTER WEDDING →</span>
+            <span>ENTER WEDDING</span>
             <ArrowRight className="w-4 h-4 text-amber-200 group-hover:translate-x-1 transition-transform" />
           </button>
         </div>
