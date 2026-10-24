@@ -220,32 +220,6 @@ export function FestiveWeddingPopups({ isTamil = false }: FestiveWeddingPopupsPr
           1. FLOATING FESTIVE ACTION BAR (Bottom Right)
           ========================================================================= */}
       <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2.5">
-        {/* Quick Calendar & Share Button */}
-        <button
-          onClick={() => setIsCalendarOpen(true)}
-          className="p-3 rounded-full bg-white/95 hover:bg-gold-50 border border-gold-300 text-gold-900 shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group flex items-center gap-2"
-          title={isTamil ? "காலண்டரில் சேமிக்க & பகிர" : "Save Date & Share Invitation"}
-          aria-label="Save Date & Share Invitation"
-        >
-          <Calendar className="w-5 h-5 text-gold-600 group-hover:rotate-12 transition-transform" />
-          <span className="hidden sm:inline text-xs font-bold uppercase tracking-wider text-charcoal-900 pr-1">
-            {isTamil ? "காலண்டர்" : "Save Date"}
-          </span>
-        </button>
-
-        {/* Quick Route Guide Button */}
-        <button
-          onClick={() => setIsRouteOpen(true)}
-          className="p-3 rounded-full bg-white/95 hover:bg-emerald-50 border border-emerald-300 text-emerald-950 shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 group flex items-center gap-2"
-          title={isTamil ? "மண்டப பயண வழிகாட்டி" : "Mandapam Travel & Routes"}
-          aria-label="Mandapam Travel & Routes"
-        >
-          <Navigation className="w-5 h-5 text-emerald-700 group-hover:translate-x-0.5 transition-transform" />
-          <span className="hidden sm:inline text-xs font-bold uppercase tracking-wider text-charcoal-900 pr-1">
-            {isTamil ? "பயண வழி" : "Route Guide"}
-          </span>
-        </button>
-
         {/* Primary Shower Petals & Send Blessings Floating Button */}
         <button
           onClick={() => {
