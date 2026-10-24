@@ -4,9 +4,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import confetti from "canvas-confetti";
 import {
-  Volume2,
   VolumeX,
-  Sparkles,
   ArrowRight,
 } from "lucide-react";
 import { useAudio } from "@/components/audio/AudioContext";
@@ -54,30 +52,20 @@ export function CinematicEntrance({
     }, 450);
   }, [onEnter, isMuted, playAudio]);
 
-  const handleSkip = useCallback(() => {
-    if (!isMuted) {
-      playAudio();
-    }
-    setIsVisible(false);
-    onEnter();
-  }, [onEnter, isMuted, playAudio]);
-
   // Keyboard accessibility
   useEffect(() => {
     if (!isVisible) return;
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        handleSkip();
+      if (e.key === "Escape" || e.key === "Enter") {
+        handleEnter();
       } else if (e.key === "m" || e.key === "M") {
         e.preventDefault();
         toggleMute();
-      } else if (e.key === "Enter") {
-        handleEnter();
       }
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [isVisible, toggleMute, handleEnter, handleSkip]);
+  }, [isVisible, toggleMute, handleEnter]);
 
   if (!isVisible) return null;
 
@@ -203,22 +191,11 @@ export function CinematicEntrance({
           <button
             id="btn-enter-wedding"
             onClick={handleEnter}
-            className="flex-1 sm:flex-initial px-5 sm:px-8 py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white font-serif font-bold text-xs sm:text-sm tracking-wider uppercase shadow-2xl border-2 border-amber-300/80 transform active:scale-95 transition-all inline-flex items-center justify-center gap-1.5 sm:gap-2 group animate-pulse"
+            className="px-8 sm:px-10 py-3.5 sm:py-4 rounded-full bg-gradient-to-r from-amber-500 via-amber-600 to-amber-700 hover:from-amber-600 hover:to-amber-800 text-white font-serif font-bold text-xs sm:text-sm tracking-wider uppercase shadow-2xl border-2 border-amber-300/80 transform active:scale-95 transition-all inline-flex items-center justify-center gap-2 group animate-pulse"
             aria-label="Enter wedding celebration"
           >
             <span>ENTER WEDDING →</span>
             <ArrowRight className="w-4 h-4 text-amber-200 group-hover:translate-x-1 transition-transform" />
-          </button>
-
-          {/* Skip Intro Button */}
-          <button
-            onClick={handleSkip}
-            className="px-4 sm:px-5 py-3 sm:py-3.5 rounded-full bg-black/60 hover:bg-black/85 border border-white/20 backdrop-blur-md text-xs font-bold uppercase tracking-wider text-stone-200 hover:text-amber-300 transition-all shadow-md active:scale-95 inline-flex items-center justify-center gap-1.5 flex-shrink-0"
-            title="Skip intro and view wedding website"
-            aria-label="Skip intro and view wedding website"
-          >
-            <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-            <span>SKIP ⏭</span>
           </button>
         </div>
 
