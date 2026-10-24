@@ -28,7 +28,30 @@ export function CoupleNameTypography({
 
     return (
       <span className={`font-tamil font-semibold text-gold-600 leading-tight drop-shadow-sm ${tamilSizes} ${className}`}>
-        விக்னேஷ் & கௌரி
+        விக்னேஷ் &amp; கௌரி
+      </span>
+    );
+  }
+
+  const imageSizes = {
+    sm: "w-48 sm:w-56",
+    md: "w-64 sm:w-80",
+    lg: "w-80 sm:w-[460px] md:w-[540px] lg:w-[620px]",
+    xl: "w-96 sm:w-[580px] md:w-[700px]",
+  }[size];
+
+  if (asImage) {
+    return (
+      <span className={`relative inline-block select-none ${imageSizes} ${className}`}>
+        <Image
+          src="/images/branding/vignesh-gowri-editorial-name.jpg"
+          alt="Vignesh & Gowri — Haute Couture Wedding Typography"
+          width={1200}
+          height={675}
+          className="w-full h-auto object-contain mix-blend-multiply filter contrast-105 hover:scale-[1.01] transition-transform duration-300"
+          priority
+        />
+        <span className="sr-only">Vignesh &amp; Gowri</span>
       </span>
     );
   }

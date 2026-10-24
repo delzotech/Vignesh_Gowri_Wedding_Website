@@ -146,14 +146,23 @@ export function WelcomeCelebrationModal({
           <span>{isTamil ? "நல்வரவு • திருமண விழா" : "WELCOME • WEDDING CELEBRATION"}</span>
         </div>
 
-        {/* Couple Names in Amora Style */}
-        <h2 className="mb-2">
+        {/* Couple Names in Haute-Couture Editorial Style */}
+        <div className="mb-2 flex items-center justify-center">
           {isTamil ? (
-            <span className="font-tamil text-3xl sm:text-4xl text-gold-600 font-semibold leading-tight drop-shadow-sm">விக்னேஷ் & கௌரி</span>
+            <span className="font-tamil text-3xl sm:text-4xl text-gold-600 font-semibold leading-tight drop-shadow-sm">விக்னேஷ் &amp; கௌரி</span>
           ) : (
-            <span className="font-amora text-3xl sm:text-4xl text-gold-600 font-medium tracking-tight drop-shadow-sm">Vignesh &amp; Gowri</span>
+            <div className="w-56 sm:w-64 mx-auto">
+              <Image
+                src="/images/branding/vignesh-gowri-editorial-name.jpg"
+                alt="Vignesh & Gowri"
+                width={600}
+                height={337}
+                className="w-full h-auto object-contain mix-blend-multiply filter contrast-105"
+                priority
+              />
+            </div>
           )}
-        </h2>
+        </div>
 
         <p className="font-serif text-base sm:text-lg text-charcoal-900 font-medium mb-1">
           {isTamil

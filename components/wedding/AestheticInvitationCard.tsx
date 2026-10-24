@@ -196,16 +196,31 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
               </p>
 
               {/* Couple Names */}
-              <div className="my-4">
-                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-900 tracking-wide uppercase">
-                  {isTamil ? couple.groom.fullName : couple.groom.firstName}
-                </h2>
-                <p className="font-script text-2xl sm:text-3xl text-gold-600 my-0.5">
-                  {isTamil ? "மற்றும்" : "and"}
-                </p>
-                <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-900 tracking-wide uppercase">
-                  {isTamil ? couple.bride.fullName : couple.bride.fullName}
-                </h2>
+              <div className="my-4 flex flex-col items-center justify-center">
+                {isTamil ? (
+                  <div>
+                    <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-900 tracking-wide uppercase">
+                      {couple.groom.fullName}
+                    </h2>
+                    <p className="font-script text-2xl sm:text-3xl text-gold-600 my-0.5">
+                      மற்றும்
+                    </p>
+                    <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-900 tracking-wide uppercase">
+                      {couple.bride.fullName}
+                    </h2>
+                  </div>
+                ) : (
+                  <div className="w-full max-w-sm sm:max-w-md mx-auto my-1">
+                    <Image
+                      src="/images/branding/vignesh-gowri-editorial-name.jpg"
+                      alt="Vignesh & Gowri"
+                      width={800}
+                      height={450}
+                      className="w-full h-auto object-contain mix-blend-multiply filter contrast-105"
+                      priority
+                    />
+                  </div>
+                )}
               </div>
 
               {/* Chic Date Divider Block */}
