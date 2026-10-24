@@ -27,6 +27,7 @@ import {
   triggerWeddingConfettiBlast,
 } from "@/components/wedding/WelcomeCelebrationModal";
 import { CoupleNameTypography } from "@/components/wedding/CoupleNameTypography";
+import { FestiveWeddingPopups } from "@/components/wedding/FestiveWeddingPopups";
 
 export default function HomePage() {
   const [isTamil, setIsTamil] = useState(false);
@@ -309,6 +310,9 @@ export default function HomePage() {
 
       {/* Cultural Footer */}
       <Footer isTamil={isTamil} />
+
+      {/* Interactive Festive Wedding Popups (Shower Petals, Calendar Reminders, Route Guide, Live Blessings) */}
+      <FestiveWeddingPopups isTamil={isTamil} />
     </div>
   );
 }
