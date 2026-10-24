@@ -56,21 +56,30 @@ export function FinalWelcomeSection({ isTamil = false }: FinalWelcomeSectionProp
             <span>{isTamil ? "நல்வரவு • எங்கள் திருமண அழைப்பு" : "நல்வரவு! • We Warmly Welcome You"}</span>
           </div>
 
-          {/* Royal Tamil & English Couple Artwork Badge */}
+          {/* Royal Tamil Calligraphy Couple Artwork Badge (Vignesh & Gowri) */}
           <div className="relative my-4 flex flex-col items-center">
-            <div className="relative w-64 sm:w-80 px-6 py-5 rounded-2xl shadow-2xl border-2 border-amber-300/80 bg-gradient-to-b from-[#2B1708]/90 via-[#3B200C]/90 to-[#2B1708]/90 backdrop-blur-md transition-transform duration-300 hover:scale-[1.02] flex flex-col items-center justify-center text-center">
-              <WeddingMonogram size="sm" withAura={true} />
-              <h3 className="font-tamil text-2xl sm:text-3xl text-amber-300 font-bold tracking-wide mt-2 drop-shadow-sm">
-                விக்னேஷ் &amp; கௌரி
-              </h3>
-              <div className="font-cinzel text-center leading-tight select-none flex flex-col items-center mt-2.5">
-                <span className="text-base sm:text-lg font-normal text-[#F3EBAE] tracking-[0.14em] uppercase">
+            <div className="relative w-64 sm:w-72 md:w-80 rounded-2xl sm:rounded-3xl shadow-2xl border-2 border-amber-300/90 overflow-hidden bg-gradient-to-b from-[#2B1708]/95 via-[#1E1006]/95 to-[#120904]/95 backdrop-blur-md p-2 sm:p-2.5 transition-transform duration-300 hover:scale-[1.02] flex flex-col items-center text-center">
+              {/* Authentic Tamil Calligraphy Artwork Image */}
+              <div className="relative w-full aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-lg border border-amber-300/40">
+                <Image
+                  src="/images/branding/tamil-calligraphy-vignesh-gowri.jpg"
+                  alt="விக்னேஷ் & கௌரி (Vignesh & Gowri) - Sacred Tamil Wedding Calligraphy Artwork"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 640px) 256px, 320px"
+                  priority
+                />
+              </div>
+
+              {/* Exact Roman Serif English Subtitle */}
+              <div className="font-cinzel text-center leading-tight select-none flex flex-col items-center pt-2 pb-1">
+                <span className="text-sm sm:text-base font-normal text-[#F3EBAE] tracking-[0.16em] uppercase">
                   VIGNESH
                 </span>
                 <span className="text-[9px] font-medium text-amber-300/85 tracking-[0.35em] my-0.5 uppercase">
                   AND
                 </span>
-                <span className="text-base sm:text-lg font-normal text-[#F3EBAE] tracking-[0.14em] uppercase">
+                <span className="text-sm sm:text-base font-normal text-[#F3EBAE] tracking-[0.16em] uppercase">
                   GOWRI
                 </span>
               </div>
