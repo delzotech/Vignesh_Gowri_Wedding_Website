@@ -189,7 +189,7 @@ export function WelcomeCelebrationModal({
             <div className="flex items-center gap-2.5">
               <Calendar className="w-4 h-4 text-gold-600 shrink-0" />
               <span className="font-semibold text-maroon-800 group-hover:underline">
-                {isTamil ? "10 நவம்பர் 2026 • வரவேற்பு (மாலை)" : "10 November 2026 • Reception (7:00 PM)"}
+                {isTamil ? "10 நவம்பர் 2026 • வரவேற்பு (மாலை 6:00 - 9:00)" : "10 November 2026 • Reception (6:00 - 9:00 PM)"}
               </span>
             </div>
             <span className="inline-flex items-center gap-1 text-[10px] text-maroon-700 bg-amber-100/90 px-2 py-0.5 rounded-full border border-gold-300 font-bold">
@@ -207,7 +207,7 @@ export function WelcomeCelebrationModal({
             <div className="flex items-center gap-2.5">
               <Calendar className="w-4 h-4 text-gold-600 shrink-0" />
               <span className="font-semibold text-emerald-800 group-hover:underline">
-                {isTamil ? "11 நவம்பர் 2026 • முகூர்த்தம் (காலை 9-10.30)" : "11 November 2026 • Muhurtham (9:00 - 10:30 AM)"}
+                {isTamil ? "11 நவம்பர் 2026 • முகூர்த்தம் (காலை 4:30 - 6:00)" : "11 November 2026 • Muhurtham (4:30 - 6:00 AM)"}
               </span>
             </div>
             <span className="inline-flex items-center gap-1 text-[10px] text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-300 font-bold">
