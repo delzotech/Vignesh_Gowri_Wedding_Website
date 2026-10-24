@@ -146,20 +146,21 @@ export function WelcomeCelebrationModal({
           <span>{isTamil ? "நல்வரவு • திருமண விழா" : "WELCOME • WEDDING CELEBRATION"}</span>
         </div>
 
-        {/* Couple Names in Haute-Couture Editorial Style */}
-        <div className="mb-2 flex items-center justify-center">
+        {/* Couple Names - Roman Inscriptional Serif Typography */}
+        <div className="mb-3">
           {isTamil ? (
             <span className="font-tamil text-3xl sm:text-4xl text-gold-600 font-semibold leading-tight drop-shadow-sm">விக்னேஷ் &amp; கௌரி</span>
           ) : (
-            <div className="w-56 sm:w-64 mx-auto">
-              <Image
-                src="/images/branding/vignesh-gowri-editorial-name.jpg"
-                alt="Vignesh & Gowri"
-                width={600}
-                height={337}
-                className="w-full h-auto object-contain mix-blend-multiply filter contrast-105"
-                priority
-              />
+            <div className="font-cinzel text-center leading-tight select-none inline-flex flex-col items-center">
+              <span className="text-2xl sm:text-3xl md:text-4xl font-normal text-gold-600 gold-text-gradient tracking-[0.14em] uppercase">
+                VIGNESH
+              </span>
+              <span className="text-[10px] sm:text-xs font-medium text-gold-700 tracking-[0.35em] my-1 uppercase">
+                AND
+              </span>
+              <span className="text-2xl sm:text-3xl md:text-4xl font-normal text-gold-600 gold-text-gradient tracking-[0.14em] uppercase">
+                GOWRI
+              </span>
             </div>
           )}
         </div>
@@ -188,7 +189,7 @@ export function WelcomeCelebrationModal({
             <div className="flex items-center gap-2.5">
               <Calendar className="w-4 h-4 text-gold-600 shrink-0" />
               <span className="font-semibold text-maroon-800 group-hover:underline">
-                {isTamil ? "10 நவம்பர் 2026 • வரவேற்பு (மாலை 6:00 - 9:00)" : "10 November 2026 • Reception (6:00 – 9:00 PM)"}
+                {isTamil ? "10 நவம்பர் 2026 • வரவேற்பு (மாலை)" : "10 November 2026 • Reception (7:00 PM)"}
               </span>
             </div>
             <span className="inline-flex items-center gap-1 text-[10px] text-maroon-700 bg-amber-100/90 px-2 py-0.5 rounded-full border border-gold-300 font-bold">
@@ -206,7 +207,7 @@ export function WelcomeCelebrationModal({
             <div className="flex items-center gap-2.5">
               <Calendar className="w-4 h-4 text-gold-600 shrink-0" />
               <span className="font-semibold text-emerald-800 group-hover:underline">
-                {isTamil ? "11 நவம்பர் 2026 • முகூர்த்தம் (அதிகாலை 4:30 - 6:00)" : "11 November 2026 • Muhurtham (4:30 – 6:00 AM)"}
+                {isTamil ? "11 நவம்பர் 2026 • முகூர்த்தம் (காலை 9-10.30)" : "11 November 2026 • Muhurtham (9:00 - 10:30 AM)"}
               </span>
             </div>
             <span className="inline-flex items-center gap-1 text-[10px] text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-300 font-bold">

@@ -34,7 +34,7 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
         colors: ["#C59B27", "#E5A93C", "#7D1824", "#1B4D3E"],
         disableForReducedMotion: true,
       });
-    } catch {}
+    } catch { }
   };
 
   return (
@@ -87,34 +87,28 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
               </span>
             </div>
 
-            {/* Central Ornate Floral Gold & Rose Wax Seal */}
+            {/* Central Ornate Gold Wax Seal */}
             <div className="my-auto py-4 relative z-10">
-              <div
-                className="relative w-32 h-32 sm:w-36 sm:h-36 mx-auto rounded-full bg-gradient-to-br from-gold-300 via-gold-500 to-amber-700 shadow-2xl p-1.5 flex items-center justify-center border-4 border-gold-200 transform hover:scale-105 transition-transform duration-300 cursor-pointer group"
-                onClick={handleOpenInvitation}
-                title={isTamil ? "அழைப்பிதழைத் திறக்க கிளிக் செய்யவும்" : "Click to break seal & open invitation"}
-              >
-                <div className="relative w-full h-full rounded-full overflow-hidden shadow-inner border border-gold-200/90">
-                  <Image
-                    src="/images/branding/floral-vg-monogram.jpg"
-                    alt="Vignesh & Gowri Floral Monogram Crest"
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    sizes="144px"
-                    priority
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end items-center pb-2">
-                    <span className="text-[9px] font-mono font-bold tracking-widest text-gold-200 uppercase drop-shadow">
-                      10 &amp; 11 NOV
-                    </span>
-                  </div>
+              <div className="relative w-28 h-28 sm:w-32 sm:h-32 mx-auto rounded-full bg-gradient-to-br from-gold-400 via-gold-500 to-gold-700 shadow-2xl p-1.5 flex items-center justify-center border-4 border-gold-200 transform hover:scale-105 transition-transform duration-300 cursor-pointer"
+                onClick={handleOpenInvitation}>
+                {/* Wax Seal Outer Rim Texture */}
+                <div className="w-full h-full rounded-full border-2 border-dashed border-gold-200/80 flex flex-col items-center justify-center text-white text-center p-2">
+                  <span className="text-[10px] tracking-widest uppercase font-serif font-bold text-gold-100">
+                    MANGALAM
+                  </span>
+                  <span className="font-script text-3xl sm:text-4xl my-0.5 leading-none text-gold-50 drop-shadow">
+                    V&G
+                  </span>
+                  <span className="text-[9px] font-mono tracking-wider text-gold-200">
+                    10 & 11 NOV
+                  </span>
                 </div>
               </div>
 
               <h3 className="font-serif text-2xl sm:text-3xl text-charcoal-900 font-semibold mt-6 mb-2">
                 {isTamil ? content.sealedHeadingTa : content.sealedHeadingEn}
               </h3>
-              
+
               <p className="text-xs sm:text-sm text-charcoal-700 max-w-sm mx-auto leading-relaxed">
                 {isTamil ? content.sealedDescTa : content.sealedDescEn}
               </p>
@@ -162,7 +156,7 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
               />
               {/* Subtle gradient overlay to smoothly blend watercolor art into card body */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#FAF7F2] via-transparent to-transparent opacity-95" />
-              
+
               <div className="absolute top-4 right-4 z-30 flex items-center gap-2">
                 <button
                   onClick={() => setIsZoomed(true)}
@@ -195,30 +189,31 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
                   : "Together with their families, cordially invite you to celebrate"}
               </p>
 
-              {/* Couple Names */}
-              <div className="my-4 flex flex-col items-center justify-center">
+              {/* Couple Names - Exact Roman Inscriptional Serif Typography (JOMANA AND MARIO style) */}
+              <div className="my-5">
                 {isTamil ? (
-                  <div>
-                    <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-900 tracking-wide uppercase">
+                  <div className="font-tamil text-center leading-tight">
+                    <h2 className="text-3xl sm:text-4xl font-semibold text-charcoal-900">
                       {couple.groom.fullName}
                     </h2>
-                    <p className="font-script text-2xl sm:text-3xl text-gold-600 my-0.5">
+                    <p className="text-xs sm:text-sm font-medium text-gold-700 tracking-widest my-1 uppercase">
                       மற்றும்
                     </p>
-                    <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-900 tracking-wide uppercase">
+                    <h2 className="text-3xl sm:text-4xl font-semibold text-charcoal-900">
                       {couple.bride.fullName}
                     </h2>
                   </div>
                 ) : (
-                  <div className="w-full max-w-sm sm:max-w-md mx-auto my-1">
-                    <Image
-                      src="/images/branding/vignesh-gowri-editorial-name.jpg"
-                      alt="Vignesh & Gowri"
-                      width={800}
-                      height={450}
-                      className="w-full h-auto object-contain mix-blend-multiply filter contrast-105"
-                      priority
-                    />
+                  <div className="font-cinzel text-center leading-tight select-none flex flex-col items-center">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-900 tracking-[0.14em] uppercase">
+                      {couple.groom.firstName}
+                    </h2>
+                    <span className="text-[11px] sm:text-xs font-medium text-gold-700 tracking-[0.35em] my-1 sm:my-1.5 uppercase">
+                      AND
+                    </span>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-normal text-charcoal-900 tracking-[0.14em] uppercase">
+                      {couple.bride.firstName}
+                    </h2>
                   </div>
                 )}
               </div>
@@ -352,7 +347,7 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
               </div>
 
               {/* Bottom Blooming Lotus Floral Border */}
-              <div className="relative w-full h-12 sm:h-14 mt-6 pointer-events-none select-none opacity-85">
+              <div className="relative w-full h-12 sm:h-14 mt-4 pointer-events-none select-none opacity-85">
                 <DecorBottomLotusBorder className="h-full" />
               </div>
             </div>

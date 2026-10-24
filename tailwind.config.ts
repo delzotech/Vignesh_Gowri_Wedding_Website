@@ -51,6 +51,7 @@ const config: Config = {
         script: ["var(--font-great-vibes)", "Great Vibes", "cursive"],
         sans: ["var(--font-inter)", "Inter", "sans-serif"],
         tamil: ["var(--font-tamil)", "Tiro Tamil", "serif"],
+        cinzel: ["Cinzel", "serif"],
       },
       boxShadow: {
         gold: "0 10px 30px -10px rgba(197, 155, 39, 0.25)",

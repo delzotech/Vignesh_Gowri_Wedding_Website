@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600&family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Prata&family=Tiro+Tamil:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;1,6..96,400;1,6..96,500;1,6..96,600&family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Prata&family=Tiro+Tamil:ital@0;1&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -130,10 +130,12 @@ body {
     transform: translateY(0) rotate(0deg);
     opacity: 0.8;
   }
+
   50% {
     transform: translateY(-15px) rotate(15deg);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0) rotate(0deg);
     opacity: 0.8;
@@ -149,9 +151,11 @@ body {
   0% {
     transform: scale(1.0);
   }
+
   50% {
     transform: scale(1.04) translateY(-1%);
   }
+
   100% {
     transform: scale(1.0);
   }
@@ -166,12 +170,15 @@ body {
     transform: translateY(-10px) translateX(0) rotate(0deg);
     opacity: 0;
   }
+
   15% {
     opacity: 0.85;
   }
+
   85% {
     opacity: 0.85;
   }
+
   100% {
     transform: translateY(850px) translateX(40px) rotate(360deg);
     opacity: 0;
@@ -183,9 +190,12 @@ body {
 }
 
 @keyframes coupleWalk {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(-5px) rotate(0.8deg);
   }
@@ -196,9 +206,12 @@ body {
 }
 
 @keyframes gentleFloat {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-4px);
   }
@@ -213,6 +226,7 @@ body {
     opacity: 0;
     transform: translateY(12px) scale(0.98);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px) scale(1);
@@ -227,9 +241,11 @@ body {
   0% {
     transform: scale(1.05) translateX(-1%) translateY(0);
   }
+
   50% {
     transform: scale(1.0) translateX(0) translateY(-0.5%);
   }
+
   100% {
     transform: scale(1.04) translateX(1%) translateY(0);
   }
@@ -244,10 +260,12 @@ body {
     transform: translateX(-30px);
     opacity: 0.35;
   }
+
   50% {
     transform: translateX(30px);
     opacity: 0.55;
   }
+
   100% {
     transform: translateX(-30px);
     opacity: 0.35;
@@ -259,9 +277,12 @@ body {
 }
 
 @keyframes sunGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.45;
   }
+
   50% {
     opacity: 0.75;
   }
@@ -273,15 +294,20 @@ body {
 
 /* Authentic Tamil Thavil Drummer Playing Animations */
 @keyframes drummerBodyGroove {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px) rotate(0deg);
   }
+
   25% {
     transform: translateY(-2.5px) rotate(-0.9deg);
   }
+
   50% {
     transform: translateY(1.5px) rotate(0.6deg);
   }
+
   75% {
     transform: translateY(-1.2px) rotate(-0.5deg);
   }
@@ -294,15 +320,21 @@ body {
 }
 
 @keyframes drumSkinVibrate {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0;
     transform: scale(1.0);
   }
-  32%, 85% {
+
+  32%,
+  85% {
     opacity: 0.75;
     transform: scale(1.04);
   }
-  38%, 90% {
+
+  38%,
+  90% {
     opacity: 0.05;
     transform: scale(0.99);
   }
@@ -315,13 +347,19 @@ body {
 }
 
 @keyframes drumBounce {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0px);
   }
-  32%, 85% {
+
+  32%,
+  85% {
     transform: translateY(2.2px);
   }
-  40%, 92% {
+
+  40%,
+  92% {
     transform: translateY(-1px);
   }
 }
@@ -335,12 +373,15 @@ body {
     opacity: 0;
     transform: translate(0, 0) scale(0.6) rotate(0deg);
   }
+
   25% {
     opacity: 0.95;
   }
+
   80% {
     opacity: 0.8;
   }
+
   100% {
     opacity: 0;
     transform: translate(-35px, -80px) scale(1.3) rotate(-18deg);
@@ -353,12 +394,16 @@ body {
 
 /* Subtle Rhythmic Music Emoji Animation */
 @keyframes musicPulseGlow {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: scale(1) rotate(0deg);
   }
+
   25% {
     transform: scale(1.1) rotate(-6deg);
   }
+
   75% {
     transform: scale(1.1) rotate(6deg);
   }
@@ -370,27 +415,36 @@ body {
 
 /* Traditional Hanging Garlands and Diya Animations */
 @keyframes garlandSwayLeft {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(2deg);
   }
 }
 
 @keyframes garlandSwayRight {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: rotate(0deg);
   }
+
   50% {
     transform: rotate(-2deg);
   }
 }
 
 @keyframes diyaFlicker {
-  0%, 100% {
+
+  0%,
+  100% {
     filter: drop-shadow(0 0 6px rgba(245, 158, 11, 0.35)) drop-shadow(0 4px 10px rgba(217, 119, 6, 0.2));
   }
+
   50% {
     filter: drop-shadow(0 0 14px rgba(245, 158, 11, 0.65)) drop-shadow(0 4px 16px rgba(217, 119, 6, 0.35));
   }
@@ -416,13 +470,16 @@ body {
     transform: translateY(-20px) translateX(0) rotate(0deg) scale(0.8);
     opacity: 0;
   }
+
   10% {
     opacity: 1;
     transform: translateY(20px) translateX(10px) rotate(45deg) scale(1);
   }
+
   85% {
     opacity: 0.9;
   }
+
   100% {
     transform: translateY(920px) translateX(-40px) rotate(480deg) scale(0.9);
     opacity: 0;
@@ -438,6 +495,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -448,6 +506,7 @@ body {
     opacity: 0;
     transform: scale(0.92) translateY(14px);
   }
+
   to {
     opacity: 1;
     transform: scale(1) translateY(0);
@@ -470,7 +529,10 @@ body {
 
 /* Smooth motion default with accessibility reduced motion override */
 @media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
+
+  *,
+  ::before,
+  ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
