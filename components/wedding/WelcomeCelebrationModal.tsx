@@ -134,7 +134,7 @@ export function WelcomeCelebrationModal({
           <X className="w-4 h-4" />
         </button>
 
-        {/* Botanical VS Wedding Monogram Crest & Ganesha Blessing */}
+        {/* Botanical VG Wedding Monogram Crest & Ganesha Blessing */}
         <div className="flex items-center justify-center gap-4 mb-2">
           <WeddingMonogram size="sm" withAura={true} />
           <DecorGaneshaMotif size="sm" withAura={true} />
@@ -149,9 +149,9 @@ export function WelcomeCelebrationModal({
         {/* Couple Names in Amora Style */}
         <h2 className="mb-2">
           {isTamil ? (
-            <span className="font-tamil text-3xl sm:text-4xl text-gold-600 font-semibold leading-tight drop-shadow-sm">விக்னேஷ் & சௌமி</span>
+            <span className="font-tamil text-3xl sm:text-4xl text-gold-600 font-semibold leading-tight drop-shadow-sm">விக்னேஷ் & கௌரி</span>
           ) : (
-            <span className="font-amora text-3xl sm:text-4xl text-gold-600 font-medium tracking-tight drop-shadow-sm">Vignesh &amp; Sowmi</span>
+            <span className="font-amora text-3xl sm:text-4xl text-gold-600 font-medium tracking-tight drop-shadow-sm">Vignesh &amp; Gowri</span>
           )}
         </h2>
 

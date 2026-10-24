@@ -133,8 +133,8 @@ export function TamilQuoteSection({ isTamil = false }: TamilQuoteSectionProps) {
       {/* Gentle Blessing Note */}
       <p className="font-serif text-xs sm:text-sm text-charcoal-700/80 mt-6 max-w-md mx-auto italic">
         {isTamil
-          ? "அன்பும் காதலும் நிறைந்த புதிய இல்லற வாழ்க்கையை விக்னேஷ் மற்றும் சௌமி தொடங்க உங்கள் நல்வாழ்த்துகளை வேண்டுகிறோம்."
-          : "As Vignesh & Sowmi embark on a life of timeless love and shared harmony, your blessings are our greatest treasure."}
+          ? "அன்பும் காதலும் நிறைந்த புதிய இல்லற வாழ்க்கையை விக்னேஷ் மற்றும் கௌரி தொடங்க உங்கள் நல்வாழ்த்துகளை வேண்டுகிறோம்."
+          : "As Vignesh & Gowri embark on a life of timeless love and shared harmony, your blessings are our greatest treasure."}
       </p>
     </section>
   );

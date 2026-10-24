@@ -1,6 +1,6 @@
 /**
  * Centralized Creative Storytelling Content & Microcopy
- * Project: Vignesh & Sowmi (Gowri) Wedding Website
+ * Project: Vignesh & Gowri Wedding Website
  * 
  * Organised by narrative scenes:
  * - Entrance
@@ -194,8 +194,8 @@ export const storyContent = {
   gallery: {
     titleEn: "Proof That the Best Moments Deserve Another Look",
     titleTa: "சிறந்த தருணங்கள் மீண்டும் ரசிக்கப்பட வேண்டியவை",
-    descEn: "Authentic, heartwarming photographs celebrating Vignesh & Sowmi's journey together.",
-    descTa: "விக்னேஷ் மற்றும் சௌமியின் வாழ்க்கைப் பயணத்தின் அரிய அழகிய தருணங்கள்.",
+    descEn: "Authentic, heartwarming photographs celebrating Vignesh & Gowri's journey together.",
+    descTa: "விக்னேஷ் மற்றும் கௌரியின் வாழ்க்கைப் பயணத்தின் அரிய அழகிய தருணங்கள்.",
   },
 
   closing: {

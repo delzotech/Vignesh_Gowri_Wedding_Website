@@ -1,11 +1,7 @@
 /**
  * Centralized Wedding Configuration & Content Model
  * Source of Truth: Verified wedding invitation card & supplied original assets.
- * 
- * Note on Bride's Name:
- * The printed physical invitation card explicitly reads "Gowri", while the project brief 
- * references "Sowmi" (a common pet/family or official name in South India, e.g. Sowmya).
- * Both names are supported in this typed model with explicit toggle/display options.
+ * Bride's Name: Gowri (கௌரி)
  */
 
 export interface EventSchedule {
@@ -49,8 +45,8 @@ export interface WeddingConfig {
     };
     bride: {
       firstName: string;
-      officialOrHomeName: string; // "Sowmi"
-      invitationName: string; // "Gowri"
+      officialOrHomeName: string;
+      invitationName: string;
       fullName: string;
       tamilName: string;
       role: string;
@@ -58,7 +54,7 @@ export interface WeddingConfig {
       portraitOriginal: string;
       characterIllustration?: string;
       bioSummary?: string;
-      nameClarificationNote: string;
+      nameClarificationNote?: string;
     };
     sharedPhoto: {
       image: string;
@@ -132,29 +128,27 @@ export const weddingConfig: WeddingConfig = {
       bioSummary: "An authentic, smiling soul ready to start life's greatest adventure.",
     },
     bride: {
-      firstName: "Sowmi",
-      officialOrHomeName: "Sowmi",
+      firstName: "Gowri",
+      officialOrHomeName: "Gowri",
       invitationName: "Gowri",
-      fullName: "Sowmi (Gowri)",
-      tamilName: "சௌமி (கௌரி)",
+      fullName: "Gowri",
+      tamilName: "கௌரி",
       role: "Bride (மணமகள்)",
       portraitImage: "/images/optimized/bride-portrait.jpg",
       portraitOriginal: "/images/original/IMG-20250210-WA0016.jpg.jpeg",
       characterIllustration: "/images/journey/bride-character.jpg",
       bioSummary: "Graceful and vibrant, stepping into forever with warmth and joy.",
-      nameClarificationNote:
-        "The printed physical invitation uses 'Gowri', while project materials refer to 'Sowmi'. Awaiting couple confirmation for final display preference.",
     },
     sharedPhoto: {
       image: "/images/optimized/couple-traditional.jpg",
       original: "/images/original/IMG-20260612-WA0001.jpg.jpeg",
-      alt: "Vignesh and Sowmi (Gowri) in traditional wedding attire in a temple courtyard",
-      caption: "Vignesh & Sowmi in sacred traditional attire",
+      alt: "Vignesh and Gowri in traditional wedding attire in a temple courtyard",
+      caption: "Vignesh & Gowri in sacred traditional attire",
     },
     invitationCard: {
       image: "/images/optimized/aesthetic-invitation-bg.jpg",
       original: "/images/original/aesthetic-invitation-bg.jpg",
-      alt: "Aesthetic South Indian watercolor wedding invitation illustration for Vignesh & Sowmi",
+      alt: "Aesthetic South Indian watercolor wedding invitation illustration for Vignesh & Gowri",
       title: "Traditional South Indian Watercolor Invitation",
     },
   },
@@ -178,8 +172,8 @@ export const weddingConfig: WeddingConfig = {
       verifiedFromInvitation: true,
       notes: "Verified directly from physical invitation card photo (image.png.jpeg).",
       calendarEvent: {
-        title: "Wedding Reception - Vignesh & Sowmi (Gowri)",
-        description: "Join us to celebrate the wedding reception of Vignesh and Sowmi (Gowri).",
+        title: "Wedding Reception - Vignesh & Gowri",
+        description: "Join us to celebrate the wedding reception of Vignesh and Gowri.",
         location: "Namperumal Thirumana Mandapam, Vaiyappamalai, Tamil Nadu",
         startTime: "2026-11-10T12:30:00Z", // 6:00 PM IST = 12:30 PM UTC
         endTime: "2026-11-10T16:30:00Z", // 10:00 PM IST = 4:30 PM UTC
@@ -204,8 +198,8 @@ export const weddingConfig: WeddingConfig = {
       verifiedFromInvitation: true,
       notes: "Verified directly from physical invitation card photo (image.png.jpeg).",
       calendarEvent: {
-        title: "Wedding Muhurtham - Vignesh & Sowmi (Gowri)",
-        description: "Auspicious wedding ceremony of Vignesh and Sowmi (Gowri).",
+        title: "Wedding Muhurtham - Vignesh & Gowri",
+        description: "Auspicious wedding ceremony of Vignesh and Gowri.",
         location: "Sri Arulmigu Kailasanathar Thirukovil, Elur, Tamil Nadu",
         startTime: "2026-11-10T23:00:00Z", // 4:30 AM IST = 11:00 PM UTC Nov 10
         endTime: "2026-11-11T00:30:00Z", // 6:00 AM IST = 12:30 AM UTC Nov 11
@@ -259,7 +253,7 @@ export const weddingConfig: WeddingConfig = {
         tamil: "விழி பார்த்த நொடியில் மலர்ந்த காதல், கரம் கோர்த்த இந்நாளில் இணைந்த பயணம்... இறுதி மூச்சு வரை உன்னோடு மட்டுமே என் உலகம்!",
         english:
           "A love that blossomed the moment our eyes first met, a lifelong journey united as our hands entwine... until my last breath, my world is you.",
-        source: "விக்னேஷ் & சௌமி (Vignesh & Sowmi • Love Promise)",
+        source: "விக்னேஷ் & கௌரி (Vignesh & Gowri • Love Promise)",
       },
     ],
   },
@@ -274,10 +268,10 @@ export const weddingConfig: WeddingConfig = {
     statusNote: "Direct Google Maps navigation links verified for both Reception and Muhurtham venues.",
   },
   meta: {
-    title: "Vignesh & Sowmi (Gowri) — Wedding Celebration",
+    title: "Vignesh & Gowri — Wedding Celebration",
     description:
-      "Join us in celebrating the wedding celebration of Vignesh and Sowmi on 10th and 11th November 2026.",
-    siteUrl: "https://wedding.vignesh-sowmi.com",
+      "Join us in celebrating the wedding celebration of Vignesh and Gowri on 10th and 11th November 2026.",
+    siteUrl: "https://wedding.vignesh-gowri.com",
     ogImage: "/images/optimized/couple-traditional.jpg",
   },
 };

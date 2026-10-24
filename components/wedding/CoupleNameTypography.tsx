@@ -28,56 +28,29 @@ export function CoupleNameTypography({
 
     return (
       <span className={`font-tamil font-semibold text-gold-600 leading-tight drop-shadow-sm ${tamilSizes} ${className}`}>
-        விக்னேஷ் & சௌமி
+        விக்னேஷ் & கௌரி
       </span>
     );
   }
 
-  // If rendered as graphic wordmark with Amora flourishing swash and blooming lotus
-  if (asImage) {
-    const imageSizes = {
-      sm: "w-44 h-14",
-      md: "w-60 sm:w-72 h-18 sm:h-22",
-      lg: "w-72 sm:w-96 md:w-[480px] h-24 sm:h-32 md:h-40",
-      xl: "w-80 sm:w-[480px] md:w-[580px] h-28 sm:h-40 md:h-48",
-    }[size];
-
-    const imgSrc =
-      color === "rose"
-        ? "/images/typography/vignesh-sowmi-amora-rose.png"
-        : "/images/typography/vignesh-sowmi-amora-gold.png";
-
-    return (
-      <div className={`relative inline-block ${imageSizes} select-none drop-shadow-sm transition-transform duration-300 hover:scale-[1.02] ${className}`}>
-        <Image
-          src={imgSrc}
-          alt="Vignesh & Sowmi"
-          fill
-          priority={size === "lg" || size === "xl"}
-          className="object-contain object-center lg:object-left"
-          sizes="(max-width: 640px) 280px, (max-width: 1024px) 480px, 580px"
-        />
-      </div>
-    );
-  }
-
-  // Clean HTML text with high-contrast Amora editorial modern serif typography
   const textSizes = {
-    sm: "text-xl sm:text-2xl",
-    md: "text-2xl sm:text-3xl",
+    sm: "text-2xl sm:text-3xl",
+    md: "text-3xl sm:text-4xl",
     lg: "text-5xl sm:text-6xl md:text-7xl",
     xl: "text-6xl sm:text-7xl md:text-8xl",
   }[size];
 
   const colorClass = {
-    gold: "text-gold-600",
+    gold: "text-gold-600 gold-text-gradient",
     rose: "text-[#B9746A]",
     charcoal: "text-charcoal-900",
   }[color];
 
   return (
-    <span className={`font-amora font-medium tracking-tight ${colorClass} ${textSizes} ${className}`}>
-      Vignesh &amp; Sowmi
+    <span className={`font-amora font-medium tracking-tight inline-flex items-center gap-2 drop-shadow-sm ${colorClass} ${textSizes} ${className}`}>
+      <span>Vignesh</span>
+      <span className="font-script text-gold-500 font-normal px-1 text-[0.85em]">&amp;</span>
+      <span>Gowri</span>
     </span>
   );
 }

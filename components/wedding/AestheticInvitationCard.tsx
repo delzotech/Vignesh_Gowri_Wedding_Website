@@ -76,7 +76,7 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
 
             {/* Ambient Background Watermark / Kolam */}
             <div className="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
-              <span className="font-serif text-[180px] text-gold-800 font-extrabold select-none">V&S</span>
+              <span className="font-serif text-[180px] text-gold-800 font-extrabold select-none">V&G</span>
             </div>
 
             {/* Top Auspicious Seal Badge */}
@@ -97,7 +97,7 @@ export function AestheticInvitationCard({ isTamil = false }: AestheticInvitation
                     MANGALAM
                   </span>
                   <span className="font-script text-3xl sm:text-4xl my-0.5 leading-none text-gold-50 drop-shadow">
-                    V&S
+                    V&G
                   </span>
                   <span className="text-[9px] font-mono tracking-wider text-gold-200">
                     10 & 11 NOV

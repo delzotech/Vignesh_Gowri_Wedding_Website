@@ -72,7 +72,7 @@ const CHECKPOINTS: Checkpoint[] = [
     bubbleEn: "Found you. Nowhere else to be.",
     bubbleTa: "கண்டுபிடிச்சுட்டேன்! என் உலகம் இனி இங்கே தான்.",
     descriptionEn: "Arriving at the mandapam where his bride Gowri is waiting.",
-    descriptionTa: "தனக்காகக் காத்திருக்கும் கௌரியை (சௌமி) திருமண மண்டபத்தில் அடைகிறார்."
+    descriptionTa: "தனக்காகக் காத்திருக்கும் கௌரியை திருமண மண்டபத்தில் அடைகிறார்."
   }
 ];
 
@@ -686,7 +686,7 @@ export function GroomJourney({ isTamil = false }: GroomJourneyProps) {
                 <div className="relative w-full h-full rounded-full border-2 border-gold-400 p-0.5 shadow-lg bg-white overflow-hidden transform hover:scale-110 transition-transform">
                   <Image
                     src={brideIllustr}
-                    alt="Sowmi (Gowri) - Bride Character"
+                    alt="Gowri - Bride Character"
                     fill
                     className="object-cover object-top"
                     sizes="72px"
@@ -873,7 +873,7 @@ export function GroomJourney({ isTamil = false }: GroomJourneyProps) {
               </h3>
               
               <p className="font-script text-2xl sm:text-3xl text-gold-700 mb-6">
-                Vignesh & Sowmi (Gowri)
+                Vignesh & Gowri
               </p>
 
               {/* Authentic Genuine Couple Photograph */}

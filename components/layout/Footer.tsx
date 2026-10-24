@@ -36,9 +36,9 @@ export function Footer({ isTamil = false }: FooterProps) {
 
         <h3 className="mb-3">
           {isTamil ? (
-            <span className="font-tamil text-2xl sm:text-3xl text-gold-600 font-semibold">விக்னேஷ் & சௌமி</span>
+            <span className="font-tamil text-2xl sm:text-3xl text-gold-600 font-semibold">விக்னேஷ் & கௌரி</span>
           ) : (
-            <span className="font-amora text-3xl sm:text-4xl text-gold-600 font-medium tracking-tight">Vignesh &amp; Sowmi</span>
+            <span className="font-amora text-3xl sm:text-4xl text-gold-600 font-medium tracking-tight">Vignesh &amp; Gowri</span>
           )}
         </h3>
 

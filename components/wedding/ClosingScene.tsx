@@ -27,7 +27,7 @@ export function ClosingScene() {
         </h2>
 
         <p className="font-script text-4xl sm:text-5xl text-gold-600 mb-3 leading-tight">
-          Vignesh & Sowmi
+          Vignesh & Gowri
         </p>
 
         {/* Closing Couple Photo */}

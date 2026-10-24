@@ -30,8 +30,8 @@ export function PhotoGallery({ isTamil = false }: PhotoGalleryProps) {
       alt: weddingConfig.couple.sharedPhoto.alt,
       title: isTamil ? "கோயில் தரிசனம்" : "Sacred Union",
       subtitle: isTamil
-        ? "கோயில் பிரகாரத்தில் விக்னேஷ் & சௌமி பாரம்பரிய ஆடை அலங்காரத்தில்"
-        : "Vignesh & Sowmi in sacred temple courtyard attire",
+        ? "கோயில் பிரகாரத்தில் விக்னேஷ் & கௌரி பாரம்பரிய ஆடை அலங்காரத்தில்"
+        : "Vignesh & Gowri in sacred temple courtyard attire",
       category: isTamil ? "இனிய ஜோடி" : "Temple Union",
       aspectClass: "aspect-[3/4] sm:aspect-[4/5]",
     },
@@ -39,10 +39,10 @@ export function PhotoGallery({ isTamil = false }: PhotoGalleryProps) {
       id: 1,
       src: weddingConfig.couple.bride.portraitImage,
       alt: `Portrait of ${weddingConfig.couple.bride.fullName}`,
-      title: isTamil ? "மணமகள் — சௌமி (கௌரி)" : "The Bride — Sowmi (Gowri)",
+      title: isTamil ? "மணமகள் — கௌரி" : "The Bride — Gowri",
       subtitle: isTamil
         ? "காஞ்சிப்பட்டு மற்றும் பாரம்பரிய நகைகளுடன் மணப்பெண் புன்னகை"
-        : "Sowmi in vibrant Kanchipuram silk saree and traditional jewelry",
+        : "Gowri in vibrant Kanchipuram silk saree and traditional jewelry",
       category: isTamil ? "மணப்பெண்" : "Bridal Portrait",
       aspectClass: "aspect-[3/4] sm:aspect-[9/16]",
     },
@@ -108,8 +108,8 @@ export function PhotoGallery({ isTamil = false }: PhotoGalleryProps) {
         </h2>
         <p className="text-xs sm:text-sm text-charcoal-700/80 mt-2 max-w-md mx-auto">
           {isTamil
-            ? "விக்னேஷ் மற்றும் சௌமியின் பாரம்பரிய திருமண பயணத்தின் அழகிய புகைப்படங்கள்."
-            : "Authentic moments celebrating the warmth, grace, and sacred journey of Vignesh & Sowmi."}
+            ? "விக்னேஷ் மற்றும் கௌரியின் பாரம்பரிய திருமண பயணத்தின் அழகிய புகைப்படங்கள்."
+            : "Authentic moments celebrating the warmth, grace, and sacred journey of Vignesh & Gowri."}
         </p>
         <div className="w-16 h-0.5 bg-gold-400 mx-auto mt-4" />
       </div>

@@ -92,7 +92,7 @@ export function CoupleSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-5 justify-center md:justify-start z-10">
               <span className="text-white text-xs font-serif tracking-widest uppercase">
-                Sowmi
+                Gowri
               </span>
             </div>
           </div>

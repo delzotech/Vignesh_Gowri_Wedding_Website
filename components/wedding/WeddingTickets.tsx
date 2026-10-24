@@ -28,7 +28,7 @@ function TicketCard({
   const downloadIcs = () => {
     const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Vignesh & Sowmi Wedding//EN
+PRODID:-//Vignesh & Gowri Wedding//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 BEGIN:VEVENT
@@ -44,7 +44,7 @@ END:VCALENDAR`;
     const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
     const link = document.createElement("a");
     link.href = window.URL.createObjectURL(blob);
-    link.setAttribute("download", `${event.id}-vignesh-sowmi.ics`);
+    link.setAttribute("download", `${event.id}-vignesh-gowri.ics`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -84,7 +84,7 @@ END:VCALENDAR`;
             Our Honored Guest & Family
           </h3>
           <p className="text-xs text-gold-700 font-medium">
-            Attending: Vignesh & Sowmi (Gowri) Wedding • {event.tamilTitle}
+            Attending: Vignesh & Gowri Wedding • {event.tamilTitle}
           </p>
         </div>
 

@@ -6,12 +6,12 @@ import { AudioProvider } from "@/components/audio/AudioContext";
 export const metadata: Metadata = {
   title: weddingConfig.meta.title,
   description: weddingConfig.meta.description,
-  metadataBase: new URL("https://wedding.vignesh-sowmi.com"),
+  metadataBase: new URL("https://wedding.vignesh-gowri.com"),
   openGraph: {
     title: weddingConfig.meta.title,
     description: weddingConfig.meta.description,
     url: weddingConfig.meta.siteUrl,
-    siteName: "Vignesh & Sowmi Wedding",
+    siteName: "Vignesh & Gowri Wedding",
     images: [
       {
         url: weddingConfig.meta.ogImage,

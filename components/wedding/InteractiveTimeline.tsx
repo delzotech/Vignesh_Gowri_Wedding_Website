@@ -20,7 +20,7 @@ export function InteractiveTimeline() {
       location: reception.locationArea,
       theme: "emerald",
       badge: "Evening Celebration",
-      notes: "The grand evening reception to welcome guests and shower blessings on Vignesh & Sowmi.",
+      notes: "The grand evening reception to welcome guests and shower blessings on Vignesh & Gowri.",
       mapUrl: "https://maps.app.goo.gl/yary6X6wh9fymMqh6",
     },
     {

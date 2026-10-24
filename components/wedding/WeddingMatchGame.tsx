@@ -253,7 +253,7 @@ export function WeddingMatchGame({ isTamil = false }: WeddingMatchGameProps) {
               ) : (
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-2 text-center">
                   <span className="w-8 h-8 rounded-full border border-gold-300 flex items-center justify-center font-serif font-bold text-gold-700 text-xs shadow-sm bg-white/80">
-                    VS
+                    VG
                   </span>
                   <Sparkles className="w-3.5 h-3.5 text-gold-400 mt-2" />
                 </div>

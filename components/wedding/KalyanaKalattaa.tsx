@@ -387,7 +387,7 @@ export function KalyanaKalattaa({ isTamil = false }: KalyanaKalattaaProps) {
                   &ldquo;இரு மனம் இணையும் இனிய தருணம்&rdquo;
                 </p>
                 <span className="text-[10px] font-mono text-emerald-800 font-bold mt-2 block">
-                  BLESSINGS UNLOCKED ✦ VIGNESH & SOWMI
+                  BLESSINGS UNLOCKED ✦ VIGNESH & GOWRI
                 </span>
               </div>
 

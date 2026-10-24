@@ -185,7 +185,7 @@ const MUHURTHAM_DISHES: FeastItem[] = [
     icon: "🧈",
     descriptionEn: "Gram flour fudge that melts instantly on the tongue, paired with a juicy circular saffron sweet.",
     descriptionTa: "வாயில் வைத்ததும் கரையும் தூய நெய் மைசூர் பாக்கும், சாறு சொட்டும் பஞ்சு போன்ற ஜாங்கிரியும்.",
-    loreEn: "Specially prepared by traditional sweet masters from Namakkal for Vignesh & Sowmi's reception.",
+    loreEn: "Specially prepared by traditional sweet masters from Namakkal for Vignesh & Gowri's reception.",
     loreTa: "மணமக்கள் சார்பாக விருந்தினர்களை மகிழ்விக்க பிரத்யேகமாக தயாரிக்கப்படும் நெய் இனிப்பு.",
     taste: "Decadent & Sweet",
     servingOrder: 11,

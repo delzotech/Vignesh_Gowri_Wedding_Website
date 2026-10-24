@@ -61,7 +61,7 @@ export function CoupleMeetCute() {
           When Two Worlds Meet
         </h2>
         <p className="text-xs sm:text-sm text-charcoal-700/80 mt-2 max-w-md mx-auto">
-          Drag the slider or click below to bring Vignesh & Sowmi together into their sacred union.
+          Drag the slider or click below to bring Vignesh & Gowri together into their sacred union.
         </p>
         <div className="w-16 h-0.5 bg-gold-400 mx-auto mt-4" />
       </div>
@@ -86,7 +86,7 @@ export function CoupleMeetCute() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">
                 <span className="text-white text-xs font-serif font-semibold tracking-wide drop-shadow mx-auto">
-                  Vignesh & Sowmi • United Forever
+                  Vignesh & Gowri • United Forever
                 </span>
               </div>
             </div>
@@ -135,7 +135,7 @@ export function CoupleMeetCute() {
                   />
                 </div>
                 <span className="text-xs font-semibold text-charcoal-800 mt-2 font-serif">
-                  Sowmi
+                  Gowri
                 </span>
               </div>
             </div>
@@ -189,7 +189,7 @@ export function CoupleMeetCute() {
               With love as their journey and this day as their start.”
             </blockquote>
             <p className="font-tamil text-xs text-gold-700 font-medium mt-2">
-              — விக்னேஷ் & கௌரி (சௌமி)
+              — விக்னேஷ் & கௌரி
             </p>
           </div>
         )}

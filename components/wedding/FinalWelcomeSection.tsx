@@ -11,6 +11,7 @@ import {
   DecorBottomLotusBorder,
   DecorCornerThorans,
 } from "@/components/wedding/DecorSegments";
+import { WeddingMonogram } from "@/components/wedding/WeddingMonogram";
 
 interface FinalWelcomeSectionProps {
   isTamil?: boolean;
@@ -55,21 +56,17 @@ export function FinalWelcomeSection({ isTamil = false }: FinalWelcomeSectionProp
             <span>{isTamil ? "நல்வரவு • எங்கள் திருமண அழைப்பு" : "நல்வரவு! • We Warmly Welcome You"}</span>
           </div>
 
-          {/* Hand-lettered Tamil Typography Couple Artwork Badge */}
-          <div className="relative my-3 flex flex-col items-center">
-            <div className="relative w-56 sm:w-72 md:w-80 aspect-[900/730] rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-300/80 bg-[#F4EFE6] transition-transform duration-300 hover:scale-[1.02]">
-              <Image
-                src="/images/welcome/vignesh-sowmi-tamil-calligraphy.jpg"
-                alt="விக்னேஷ் & சௌமி - Artistic Hand-lettered Tamil Wedding Typography Artwork"
-                fill
-                className="object-cover object-center"
-                sizes="(max-width: 640px) 224px, (max-width: 768px) 288px, 320px"
-                priority
-              />
+          {/* Royal Tamil & English Couple Artwork Badge */}
+          <div className="relative my-4 flex flex-col items-center">
+            <div className="relative w-64 sm:w-80 px-6 py-5 rounded-2xl shadow-2xl border-2 border-amber-300/80 bg-gradient-to-b from-[#2B1708]/90 via-[#3B200C]/90 to-[#2B1708]/90 backdrop-blur-md transition-transform duration-300 hover:scale-[1.02] flex flex-col items-center justify-center text-center">
+              <WeddingMonogram size="sm" withAura={true} />
+              <h3 className="font-tamil text-2xl sm:text-3xl text-amber-300 font-bold tracking-wide mt-2 drop-shadow-sm">
+                விக்னேஷ் &amp; கௌரி
+              </h3>
+              <p className="font-amora text-lg sm:text-xl text-amber-100 tracking-wide font-medium mt-1">
+                Vignesh &amp; Gowri
+              </p>
             </div>
-            <p className="mt-2 text-amber-200 font-serif text-xs sm:text-sm tracking-widest uppercase drop-shadow">
-              Vignesh & Sowmi
-            </p>
           </div>
 
           <p className="font-serif text-sm sm:text-lg text-stone-200 max-w-xl mx-auto leading-relaxed italic mb-6">

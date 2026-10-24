@@ -201,7 +201,7 @@ export function CinematicEntrance({
 
         {/* Couple Names Sub-caption */}
         <p className="text-[10px] sm:text-[11px] font-serif font-bold tracking-widest text-amber-200/95 drop-shadow-md mt-2 sm:mt-2.5 uppercase text-center px-2">
-          Vignesh & Sowmi • 10 & 11 November 2026 • Tamil Nadu
+          Vignesh & Gowri • 10 & 11 November 2026 • Tamil Nadu
         </p>
       </div>
     </div>

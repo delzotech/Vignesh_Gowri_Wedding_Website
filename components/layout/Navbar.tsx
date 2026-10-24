@@ -45,7 +45,7 @@ export function Navbar({ isTamil, onToggleLanguage, onReplayIntro }: NavbarProps
         <a href="#hero" className="flex items-center gap-2.5 group">
           <WeddingMonogram size="sm" />
           <span className="font-amora text-xl sm:text-2xl font-medium tracking-tight text-gold-700 hidden sm:inline group-hover:text-gold-800 transition-colors drop-shadow-sm">
-            Vignesh & Sowmi
+            Vignesh & Gowri
           </span>
         </a>
 
